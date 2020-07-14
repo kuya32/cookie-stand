@@ -10,42 +10,93 @@ var seattle = {
     var min = this.minCustomers;
     var max = this.maxCustomers;
     var randomNumber = Math.random() * (max - min) + min;
-    return randomNumber;
+    return Math.round(randomNumber);
   },
 
   findCookiesPerHour: function () {
     for (var i = 0; i < 14; i++) {
       var amountOfCookies = this.numberOfCustomers() * this.avgCookiePerCust;
-      var puttingInArray = this.cookiesPurchasedPerHour.push(amountOfCookies);
+      this.cookiesPurchasedPerHour.push(Math.round(amountOfCookies));
     };
-    return puttingInArray;
   },
 
   findTotalCookies: function () {
-
+    var totalCookies = 0;
+    for (var i = 0; i < this.cookiesPurchasedPerHour.length; i++) {
+      totalCookies += this.cookiesPurchasedPerHour[i];
+    };
+    this.cookiesPurchasedPerHour.push(totalCookies);
+    return totalCookies;
   },
 
+  displaySales: function () {
+    for (var i = 0; i < this.cookiesPurchasedPerHour.length; i++){
+      var ulSeattleLi = document.getElementById('seattleStand');
+      var liSeattle = document.createElement('li');
+      liSeattle.textContent = this.cookiesPurchasedPerHour[i];
+      ulSeattleLi.appendChild(liSeattle);
+    };
+  },
+
+
+
+  //   renderLikes: function(){
+//     for(var i = 0; i < this.thingsSheLikes.length; i++){
+//       // one time starts
+//       //1. find target
+//       var tofuLikesList = document.getElementById('tofu-likes');
+//       //2.
+//       var tofuLikesItem = document.createElement('li');
+//       // 2.5
+//       tofuLikesItem.textContent = this.thingsSheLikes[i];
+//       // 3.
+//       tofuLikesList.appendChild(tofuLikesItem);
+//     //one time ends
+//     }
+
+
 };
+
 seattle.numberOfCustomers();
 seattle.findCookiesPerHour();
-console.log(seattle.cookiesPurchasedPerHour);
+seattle.findTotalCookies();
+seattle.displaySales();
 
-// var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+// var tofu = {
+//   name: 'tofu',
+//   color: 'brown',
+//   pretty: true,
+//   age: 10,
+//   thingsSheLikes :['eating food', 'sniffing fresh air', 'loafing', 'be the alpha'],
+//   wakeUp: function () {
+//     // put an li on the page with details about snowdrop waking me up
+//     var parent = document.getElementById('alarms');
+//     var child = document.createElement('li');
+//     child.textContent = this.name + ' the ' + this.color + ' is ' + this.age + ' cat years old, wake up and give her food';
+//     parent.appendChild(child);
+//   },
+//   renderLikes: function(){
+//     for(var i = 0; i < this.thingsSheLikes.length; i++){
+//       // one time starts
+//       //1. find target
+//       var tofuLikesList = document.getElementById('tofu-likes');
+//       //2.
+//       var tofuLikesItem = document.createElement('li');
+//       // 2.5
+//       tofuLikesItem.textContent = this.thingsSheLikes[i];
+//       // 3.
+//       tofuLikesList.appendChild(tofuLikesItem);
+//     //one time ends
+//     }
 
-// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-//   var holder = 1;
-//   for (var i = 0; i < dynamicArray.length; i++) {
-//     var theDynamicProductArray = multiply(holder, dynamicArray[i]);
-//     holder = theDynamicProductArray[0];
-//   } 
-
-//   var holderTwo = '';
-//   for (var j = 0; j < dynamicArray.length; j++) {
-//     holderTwo += dynamicArray[j];
-//   if (dynamicArray.length !== sum((j), 1)[0]) {
-//     holderTwo += ',';
 //   }
-//   }
+// };
+
+// tofu.wakeUp();
+// tofu.renderLikes();
+
+
+
 
 // var tokyo = {
 //   minCustomers: 3,
@@ -82,40 +133,6 @@ console.log(seattle.cookiesPurchasedPerHour);
 //     return Math.random() * (this.maxCustomers - this.minCustomers) + this.minCustomers
 //   },
 // };
-
-// var tofu = {
-//   name: 'tofu',
-//   color: 'brown',
-//   pretty: true,
-//   age: 10,
-//   thingsSheLikes :['eating food', 'sniffing fresh air', 'loafing', 'be the alpha'],
-//   wakeUp: function () {
-//     // put an li on the page with details about snowdrop waking me up
-//     var parent = document.getElementById('alarms');
-//     var child = document.createElement('li');
-//     child.textContent = this.name + ' the ' + this.color + ' is ' + this.age + ' cat years old, wake up and give her food';
-//     parent.appendChild(child);
-//   },
-//   renderLikes: function(){
-//     for(var i = 0; i < this.thingsSheLikes.length; i++){
-//       // one time starts
-//       //1. find target
-//       var tofuLikesList = document.getElementById('tofu-likes');
-//       //2.
-//       var tofuLikesItem = document.createElement('li');
-//       // 2.5
-//       tofuLikesItem.textContent = this.thingsSheLikes[i];
-//       // 3.
-//       tofuLikesList.appendChild(tofuLikesItem);
-//     //one time ends
-//     }
-
-//   }
-// };
-
-// tofu.wakeUp();
-// tofu.renderLikes();
-
 
 
 

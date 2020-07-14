@@ -1,2 +1,17 @@
-# cookie-stand
-Pat's cookie business plan
+# Lab: 06 Salmon Cookies
+
+### Overview
+- Pat's cookie business plan
+
+**Author:**[Marchael Acode](https://github.com/kuya32)
+
+### Languages & Tech:
+- HTML
+- CSS
+- Javascript
+
+### Contributions 
+
+
+### Links and Resources:
+- Used [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) as a method to randomly generate a number of customers per hour. 

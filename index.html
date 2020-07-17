@@ -5,27 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="reset.css" type="text/css">
-  <title>Kittens Demo</title>
+  <title>Cookie Stand Lab</title>
 </head>
 
 <body>
   <header>
     <nav>
       <h1>Home</h1>
-      <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/salmon.png?raw=true' alt='Picture of a salmon which is the logo' width=200>
+      <img src='salmon.png' alt='Picture of a salmon which is the logo' width=200>
       <ul>
         <li>
           <a href='/sales.html'>Sales</a>
         </li>
-        <a href="#">Lighter Background</a>
-      </li>
-      <li>
-        <a href="#">Darker Background</a>
-      </li>
-      <li>
-        <a href="#">Nav Item 3</a>
-      </li>
-    </ul>
+        <li>
+          <a href="#flavor">Flavors</a>
+        </li>
+        <li>
+          <a href="#location">Locations</a>
+        </li>
+        <li>
+          <a href="#hour">Hours of Operation</a>
+        </li>
+        <li>
+          <a href="#product">Products</a>
+        </li>
+        <li>
+          <a href="#about">About the Company</a>
+        </li>
+      </ul>
   </nav>
 </header>
 
@@ -33,23 +40,27 @@
   
   <h1>Pat's Salmon Cookies</h1>
   
-  <div>
+  <div id='flavor'>
     <h2>Flavors</h2>
     <ul>
       <li>
-        <h3>Salmon</h3>
-        <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/salmon.png?raw=true' alt='Salmon' width=100>
-        <p>Having a few beers short-term dating I'm just a regular guy stepping outside your comfort zone. Shoot me a message Sunday funday Arrested Development grab coffee or a drink tacos, Game of Thrones training for the marathon playing my guitar Werner Herzog new friends. Really hoppy beers I have a crush on easy-going whatever topic is on NPR food mountain biking.</p>
+        <img src='salmon.png' alt='Salmon' width=100>
+        <section>
+          <h3>Salmon</h3>
+          <p>Having a few beers short-term dating I'm just a regular guy stepping outside your comfort zone. Shoot me a message Sunday funday Arrested Development grab coffee or a drink tacos, Game of Thrones training for the marathon playing my guitar Werner Herzog new friends. Really hoppy beers I have a crush on easy-going whatever topic is on NPR food mountain biking.</p>
+        </section>
       </li>
       <li>
-        <h3>Chinook</h3>
         <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/chinook.jpg?raw=true' alt='Chinook' width=100>
-        <p>Everything but country music Netflix trying this for the first time if you think we have something in common. Too many to list family is very important to me hiking On The Road foodie, medical school hiking ask me anything I know I listed more than 6 things if you like my profile. Bored at home is pretty awesome playing my guitar I don't take myself too seriously home brewing as friends.</p>
+        <section>
+          <h3>Chinook</h3>
+          <p>Everything but country music Netflix trying this for the first time if you think we have something in common. Too many to list family is very important to me hiking On The Road foodie, medical school hiking ask me anything I know I listed more than 6 things if you like my profile. Bored at home is pretty awesome playing my guitar I don't take myself too seriously home brewing as friends.</p>
+        </section>
       </li>
     </ul>
   </div>
   
-  <div>
+  <div id='location'>
     <h2>Locations</h2>
     <ul>
       <li>
@@ -80,8 +91,24 @@
       </ul>
     </div>
 
+    <form id='newLocation'>
+      <fieldset>
+        <legend>Create New Location</legend>
+        <label>Name<br />
+        <input type='text' name='name' /></label><br />
+        <label>Minimum Customers<br />
+        <input type='number' name='minCustomers'></label><br />
+        <label>Maximum Customers<br />
+        <input type='number' name='maxCustomers'></label><br />
+        <label>Average Cookies Per Customer<br />
+        <input type='number' name='avgCookiesPerCust'></label><br />
+        <input type='submit'>
+      </fieldset>
+    </form>
+
+
     <div>
-      <h2>Hours Open</h2>
+      <h2 id='hour'>Hours Open</h2>
       <ul>
         <li>
           <p>Monday: 6 AM - 7 PM</p>
@@ -109,11 +136,11 @@
 
 
     <div>
-      <h2>Products</h2>
+      <h2 id='product'>Products</h2>
       <ul>
         <li>
           <h3>Salmon Cookie Cutter</h3>
-          <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/frosted-cookie.jpg?raw=true' alt='Salmon cookie' width=100>
+          <img src='salmon.png' alt='Salmon cookie' width=100>
           <p>Price: $4</p>
         </li>
         <li>
@@ -130,7 +157,7 @@
     </div>
 
     <div>
-      <h2>HQ Contact Information</h2>
+      <h2 id='contact'>HQ Contact Information</h2>
       <ul>
         <li>
           <p>Phone Number: 360.946.6969</p>
@@ -147,7 +174,7 @@
     <article>
       <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/family.jpg?raw=true' alt='Picture of Pat and his family'>
       <section>
-        <h2>Origin of Pat's Salmon Cookies</h2>
+        <h2 id='about'>Origin of Pat's Salmon Cookies</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia fugiat modi, dolore aperiam voluptate similique obcaecati iure, quasi expedita tempore voluptatem porro unde nesciunt. Nostrum nobis eveniet sequi quis eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatibus veniam minima consectetur aut doloribus, nam alias hic inventore ipsum in molestiae provident tempore id quidem, pariatur quibusdam, iste odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad officia dignissimos ut voluptates illum nesciunt magnam aspernatur eum, itaque aliquid blanditiis fugiat architecto harum earum, dolorem nostrum! Aliquid, iste vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae a sequi nulla! Nisi repellat asperiores, ratione suscipit possimus, eligendi nostrum fugiat voluptate dolorum, alias nemo maxime facere nobis dolorem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aliquam doloremque excepturi aut! Dignissimos unde, quasi veritatis at explicabo omnis, odio earum iste ducimus quis a, eum cupiditate officia pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam fuga quos, quaerat consequuntur, id veniam iusto reiciendis quibusdam quisquam laudantium quam pariatur ab dolorum aperiam commodi nemo nam ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, vero laboriosam doloribus amet esse ipsa necessitatibus quas reprehenderit dolorum quam voluptatem dolores accusantium saepe atque similique tempore perferendis minima nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis similique quae nulla perferendis, adipisci asperiores corrupti reprehenderit provident rem officiis beatae, facere nesciunt quis, iure libero mollitia magni quo? Modi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo est aperiam expedita dignissimos facilis cum soluta quos, veniam tempora ipsam voluptatibus omnis, unde deserunt vero cupiditate, ipsum ab perspiciatis. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis cum ducimus dolorum beatae officiis voluptatibus minus illum quam aperiam. Excepturi accusantium iste deserunt culpa tenetur aliquam qui nihil. Nesciunt?</p>
       </section>
     </article>
@@ -155,7 +182,7 @@
 
   <footer>
     <nav>
-      <img src='https://github.com/codefellows/seattle-201d65/blob/master/class-08/lab-b/assets/salmon.png?raw=true' alt='Picture of a salmon which is the logo' width=200>
+      <img src='fish.jpg' alt='Four fish swimming' width=100>
       <img src='https://avatars0.githubusercontent.com/u/63315371?s=400&u=343fcccae0b663a1fb29731ca282fcc7cfd91084&v=4' alt='Good looking guy' width=100>
       <ul>
         <li>

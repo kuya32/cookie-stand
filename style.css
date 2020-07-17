@@ -1,6 +1,131 @@
+header {
+  background-color: rgb(58,140, 124);
+  height: 120px;
+}
+
+nav {
+  margin: 0 auto;
+  width: 960px;
+}
+
+nav > h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 201, 181);
+  line-height: 90px;
+  float: left;
+  margin: 10px;
+}
+
+nav > img {
+  float: left;
+  margin: 10px;
+}
+
+nav > ul {
+  float: left;
+}
+
+a {
+  color: rgb(255, 201, 181);
+  text-decoration: none;
+}
+
+nav li {
+  float: left;
+  line-height: 90px;
+  margin: 10px;
+}
+
 body {
   background-color: rgb(216, 155, 132);
 }
+
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+main > h1 {
+  text-align: center;
+  margin: 50px 0px 100px 0px;
+  font-size: 75px;
+  text-decoration: underline;
+}
+
+#flavor {
+  margin: 0px 0px 50px 0px;
+}
+
+#flavor > h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px 50px 0px;
+}
+
+#flavor > ul > li {
+  overflow: hidden;
+
+}
+
+#flavor > ul > li > img {
+  float: left;
+  width: 50%;
+  margin: 0px 30px 50px 0px;
+}
+
+#flavor > ul > li > section > h3 {
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+#flavor > ul > li > section > p {
+  font-style: italic;
+  overflow: auto;
+}
+
+#location {
+  margin: 25px;
+}
+
+#location > h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px 50px 0px;
+}
+
+#location > li {
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 table, tr, th, td{
   font-family: Arial, Helvetica, sans-serif;

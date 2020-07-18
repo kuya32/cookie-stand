@@ -1,9 +1,14 @@
+/* * {
+	Outline: dotted 2px purple;
+} */
+
 header {
   background-color: rgb(58,140, 124);
   height: 120px;
+  margin: 0 auto;
 }
 
-nav {
+header > nav {
   margin: 0 auto;
   width: 960px;
 }
@@ -39,6 +44,7 @@ nav li {
 
 body {
   background-color: rgb(216, 155, 132);
+  color: rgb(49, 37, 33)
 }
 
 main {
@@ -86,7 +92,7 @@ main > h1 {
 }
 
 #location {
-  margin: 25px;
+  margin: 25px 25px 50px 25px;
 }
 
 #location > h2 {
@@ -96,40 +102,211 @@ main > h1 {
   margin: 0px 0px 50px 0px;
 }
 
-#location > li {
+#location > ul > li:first-child {
+  float: left;
+  width: 50%;
+}
+
+#location > ul > li:nth-child(2) {
+  float: right;
+  width: 50%
+}
+
+#location > ul > li:nth-child(3) {
+  float: left;
+  width: 50%;
+}
+
+#location > ul > li:nth-child(4) {
+  float: right;
+  width: 50%
+}
+
+#location > ul > li:nth-child(5) {
+  clear: both;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#location > ul > li > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+}
+
+#location > ul > li > p {
+  font-size: 15px;
+  font-style: italic;
+  margin: 0px 0px 10px 0px;
+}
+
+#hour {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#hour > h2 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+#hour > ul > li > p {
+  text-align: center;
+  margin: 8px;
+}
+
+#product {
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+#product > h2 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+#product > ul > li {
+  margin: 15px 0px 0px 125px;
+}
+
+#product > ul > li:first-child {
   float: left;
 }
 
+#product > ul > li > h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#product > ul > li:first-child > img {
+  margin: 0px 0px 15px 18px;
+}
+
+#product > ul > li:nth-child(2) > img {
+  margin: 0px 0px 15px 45px;
+}
+
+#product > ul > li:last-child > img {
+  margin: 0px 0px 15px 14px;
+}
+
+#product > ul > li > p {
+  font-size: 15px;
+  text-align: center;
+}
 
 
+#product > ul > li:nth-child(2) {
+  float: left;
+}
+
+#product > ul > li:last-child {
+  float: left;
+}
+
+#pat {
+  clear: both;
+  overflow: auto;
+}
+
+#pat > img {
+  float: left;
+  width: 48.5%;
+  margin: 25px 15px 50px 15px;
+}
+
+#pat > section {
+  width: 45%;
+  float: right;
+  margin: 0px 15px 50px 15px;
+}
+
+#pat > section > h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#pat > section > p {
+  height: 250px;
+  overflow: auto;
+  font-style: italic;
+  padding: 5px;
+  border: solid 1px black;
+}
 
 
+footer {
+  background-color: rgb(58,140, 124);
+  height: 120px;
+  margin: 0 auto;
+  clear: both;
+  overflow: auto;
+  color: rgb(255, 201, 181);
+}
 
+footer > nav {
+  margin: 0 auto;
+  width: 960px;
+}
 
+#salesHeader {
+  margin-bottom: 50px;
+}
 
+#newLocation {
+  width: 240px;
+  margin: 0 auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#newLocation > fieldset > legend {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 table, tr, th, td{
   font-family: Arial, Helvetica, sans-serif;
   border: solid 1px black;
   border-collapse: collapse;
   padding: 5px;
+}
+
+table {
+  width: 960px;
+  margin: 50px 0px 50px 0px;
+}
+
+th {
+  background-color: rgb(58,140, 124);
+}
+td, tr {
+  color: rgb(49, 37, 33)
+}
+
+#salesData > li:first-child{
+  margin: 10px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#salesData > li:nth-child(16n){
+  margin: 10px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+#salesData > li:nth-child(16n) + li {
+  margin: 10px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
 }

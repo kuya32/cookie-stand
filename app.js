@@ -121,15 +121,17 @@ var locationForm = document.getElementById('newLocation');
 
 locationForm.addEventListener('submit', makeALocation);
 
-function makeALocation (event) {
+function makeALocation(event) {
   event.preventDefault();
 
   var name = event.target.name.value;
   var minCustomers = event.target.minCustomers.value;
   var maxCustomers = event.target.maxCustomers.value;
-  var avgCookiePerCust = event.target.avgCookiePerCust.value;
+  var avgCookiePerCust = event.target.avgCookiesPerCust.value;
 
   var newLocation = new Locations(name, minCustomers, maxCustomers, avgCookiePerCust);
-
+  newLocation.findCookiesPerHour();
+  newLocation.findTotalCookies();
+  newLocation.displaySales('salesData');
   newLocation.renderedTableData();
-}
+};

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <!-- <link rel="stylesheet" href="reset.css" type="text/css"> -->
   <title>Cookies Stand Lab</title>
 </head>
 <body>
 
-  <header>
+  <header id='salesHeader'>
     <nav>
       <h1>Sales</h1>
       <img src='salmon.png' alt='Picture of a salmon which is the logo' width=200>
@@ -22,15 +22,32 @@
   </header>
 
   <main>
+    <form id='newLocation'>
+      <fieldset>
+        <legend>Create New Location</legend>
+        <label>Name<br />
+        <input type='text' name='name' /></label><br />
+        <label>Minimum Customers<br />
+        <input type='number' name='minCustomers'></label><br />
+        <label>Maximum Customers<br />
+        <input type='number' name='maxCustomers'></label><br />
+        <label>Average Cookies Per Customer<br />
+        <input type='number' name='avgCookiesPerCust'></label><br />
+        <input type='submit'>
+      </fieldset>
+    </form>
     <table id='cookiesTable'></table>
     <ul id ='salesData'></ul>
   </main>
   
   <footer>
     <nav>
-      <img src='salmon.png' alt='Picture of a salmon which is the logo' width=200>
+      <img src='fish.jpg' alt='Four fish swimming' width=100>
       <img src='https://avatars0.githubusercontent.com/u/63315371?s=400&u=343fcccae0b663a1fb29731ca282fcc7cfd91084&v=4' alt='Good looking guy' width=100>
       <ul>
+        <li>
+          <p>Creator: Marchael Acode</p>
+        </li>
         <li>
           <a href='https://github.com/kuya32'>Web Page Creator GitHub Info</a>
         </li>

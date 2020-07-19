@@ -14,6 +14,7 @@ header > nav {
 }
 
 nav > h1 {
+  font-family:'Bebas Neue', cursive;
   font-size: 50px;
   font-weight: bold;
   color: rgb(255, 201, 181);
@@ -44,7 +45,8 @@ nav li {
 
 body {
   background-color: rgb(216, 155, 132);
-  color: rgb(49, 37, 33)
+  color: rgb(49, 37, 33);
+  font-family:'Times New Roman', Times, serif;
 }
 
 main {
@@ -53,6 +55,8 @@ main {
 }
 
 main > h1 {
+  font-family:'Bebas Neue', cursive;
+  /* color: rgb(100, 140, 109); */
   text-align: center;
   margin: 50px 0px 100px 0px;
   font-size: 75px;
@@ -64,6 +68,8 @@ main > h1 {
 }
 
 #flavor > h2 {
+  font-family:'Bebas Neue', cursive;
+  color: rgb(83, 112, 89);
   text-decoration: underline;
   text-align: center;
   font-size: 30px;
@@ -96,6 +102,8 @@ main > h1 {
 }
 
 #location > h2 {
+  font-family:'Bebas Neue', cursive;
+  color: rgb(83, 112, 89);
   text-decoration: underline;
   text-align: center;
   font-size: 30px;
@@ -140,12 +148,18 @@ main > h1 {
   margin: 0px 0px 10px 0px;
 }
 
+#location > ul > li > img {
+  border: groove 4px rgb(49, 37, 33);
+}
+
 #hour {
   width: 50%;
   margin: 0 auto;
 }
 
 #hour > h2 {
+  font-family:'Bebas Neue', cursive;
+  color: rgb(83, 112, 89);
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
@@ -163,6 +177,8 @@ main > h1 {
 }
 
 #product > h2 {
+  font-family:'Bebas Neue', cursive;
+  color: rgb(83, 112, 89);
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
@@ -171,6 +187,10 @@ main > h1 {
 
 #product > ul > li {
   margin: 15px 0px 0px 125px;
+  background-color: rgb(255, 201, 181);
+  border: groove 3px rgb(49, 37, 33);
+  padding: 10px;
+  opacity: .9;
 }
 
 #product > ul > li:first-child {
@@ -216,7 +236,8 @@ main > h1 {
 
 #pat > img {
   float: left;
-  width: 48.5%;
+  border: groove 5px rgb(49, 37, 33);
+  width: 47.5%;
   margin: 25px 15px 50px 15px;
 }
 
@@ -227,12 +248,15 @@ main > h1 {
 }
 
 #pat > section > h2 {
+  font-family:'Bebas Neue', cursive;
+  color: rgb(83, 112, 89);
   font-size: 30px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
 
 #pat > section > p {
+  background-color: rgb(255, 201, 181);
   height: 250px;
   overflow: auto;
   font-style: italic;
@@ -255,17 +279,32 @@ footer > nav {
   width: 960px;
 }
 
+footer > nav > img {
+  border: groove 5px rgb(49, 37, 33);
+}
+
 #salesHeader {
   margin-bottom: 50px;
+}
+
+#salesMain {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #newLocation {
   width: 240px;
   margin: 0 auto;
+  background-color: rgb(255, 201, 181);
+}
+
+#newLocation > fieldset {
+  outline: groove 5px rgb(49, 37, 33);
+  padding: 20px;
 }
 
 #newLocation > fieldset > legend {
   margin: 0px 0px 20px 0px;
+  padding-top: 20px;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
@@ -274,7 +313,7 @@ footer > nav {
 
 table, tr, th, td{
   font-family: Arial, Helvetica, sans-serif;
-  border: solid 1px black;
+  border: groove 3px rgb(49, 37, 33);
   border-collapse: collapse;
   padding: 5px;
 }
@@ -282,11 +321,13 @@ table, tr, th, td{
 table {
   width: 960px;
   margin: 50px 0px 50px 0px;
+  background-color: rgb(255, 201, 181);
 }
 
-th {
+th, td:first-child, td:nth-child(16) {
   background-color: rgb(58,140, 124);
 }
+
 td, tr {
   color: rgb(49, 37, 33)
 }

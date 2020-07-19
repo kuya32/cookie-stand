@@ -114,7 +114,6 @@ for (var i = 0; i < stores.length; i++) {
 
 stores[0].renderedFooter();
 
-
 // ==================== Form Section ====================
 
 var locationForm = document.getElementById('newLocation');

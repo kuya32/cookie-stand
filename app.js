@@ -132,5 +132,7 @@ function makeALocation(event) {
   newLocation.findCookiesPerHour();
   newLocation.findTotalCookies();
   newLocation.displaySales('salesData');
+  document.getElementById('cookiesTable').deleteRow(-1);
   newLocation.renderedTableData();
+  stores[0].renderedFooter();
 };
